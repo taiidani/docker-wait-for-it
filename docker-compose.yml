@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  example:
+    build: ./docker/example
+
+  db:
+    image: mariadb:10.0.17
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
